@@ -1,26 +1,51 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --primary: #CB1B1B;
+  --primary-dark: #331010;
+  --background: #0d0d0d;
+  --foreground: #0d0d0d;
+  --border-radius: 0.5rem;
+  --font-manrope: 'Manrope',Arial, Helvetica, sans-serif;
+  --card-radius: 0.5rem;
+  --card-border-color: rgba(255, 255, 255, 0.1);
+  --btn-border-radius: 0.25rem;
+  --chip-radius: 2.5rem;
+  --chip-border-color: rgba(203, 27, 27, 0.1);
+
 }
 
-@theme inline {
+@theme {
+  --color-primary: var(--primary);
+  --color-primary-dark: var(--primary-dark);
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-manrope);
+
+
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #0d0d0d;
+    --foreground: #fafafa;
   }
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans),;
+}
+
+.card {
+  @apply inline-block border border-[var(--card-border-color)] rounded-[var(--card-radius)]; 
+}
+
+.btn-primary {
+  @apply py-4 px-6 bg-[var(--primary)] box-border rounded-[var(--btn-border-radius)] border-[var(--card-border-color)] border-2 text-white font-semibold cursor-pointer;
+}
+
+.chip {
+  @apply py-3 px-4 inline-block font-semibold text-primary bg-primary-dark border-[var(--chip-border-colors)] border-2 rounded-[var(--chip-radius)];
 }
