@@ -42,10 +42,58 @@ body {
   @apply inline-block border border-[var(--card-border-color)] rounded-[var(--card-radius)]; 
 }
 
-.btn-primary {
-  @apply py-4 px-6 bg-[var(--primary)] box-border rounded-[var(--btn-border-radius)] border-[var(--card-border-color)] border-2 text-white font-semibold cursor-pointer;
+.btn {
+  @apply  h-fit py-4 px-6 rounded-[var(--btn-border-radius)] text-[#0d0d0d] bg-[#fafafa] font-semibold cursor-pointer;
+}
+
+.btn:hover {
+  @apply bg-[rgba(250,250,250,0.8)] transition-colors duration-300;
+}
+
+.primary {
+  @apply bg-[var(--primary)] box-border border-[var(--card-border-color)] border-1 text-white font-semibold;
+}
+
+.primary:hover {
+  @apply bg-[var(--primary-dark)] transition-colors duration-300;
+}
+
+.secondary {
+  @apply bg-transparent text-[var(--primary)];
 }
 
 .chip {
   @apply py-3 px-4 inline-block font-semibold text-primary bg-primary-dark border-[var(--chip-border-colors)] border-2 rounded-[var(--chip-radius)];
+}
+
+.section {
+  @apply py-24 flex flex-col gap-16;
+}
+
+.heading-1 {
+  @apply text-7xl leading-none;
+}
+
+.heading-2 {
+  @apply text-[64px] leading-none
+}
+
+.heading-3 {
+  @apply text-[48px] leading-none
+}
+
+.heading-4 {
+  @apply text-7xl leading-none
+}
+
+.heading-5 {
+  @apply text-7xl leading-none
+}
+
+.heading-6 {
+  @apply text-7xl leading-none
+}
+
+.paragraph {
+  @apply text-[16px] text-[#909090] leading-[150%]
 }

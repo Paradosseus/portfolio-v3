@@ -6,7 +6,7 @@ type ButtonProps = {
 
 const Button = ({children, variant}: ButtonProps) => {
     return (
-        <button className={`btn-primary`}>
+        <button className={`btn ${variant} flex flex-row items-center gap-2.5`}>
         {children}
         </button>
     )
