@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Manrope } from "next/font/google";
 import "./globals.css";
-import Header from "./_components/header"
+import Header from "./_components/ui/header"
 const manrope = Manrope({
   variable: "--font-manrope",
   subsets: ["latin"],
@@ -10,7 +10,7 @@ const manrope = Manrope({
 })
 
 export const metadata: Metadata = {
-  title: "FJ Collado | Web Designer & Frontend Developer Portfolio",
+  title: "Francis Joshua Collado | Portfolio",
   description: "Web designer and developer FJ (Francis Joshua) creates websites that ignite results. Specializing in custom web design and development with passionate precision to fuel your business growth online.",
 };
 

@@ -3,7 +3,7 @@ import Section from "./section"
 const QuoteSection = () => {
     return (
         <Section>
-            <p className="text-5xl leading-[150%] text-center">I fuse design and code to craft websites that that ignite attention and spark results.</p>
+            <p className="text-5xl leading-[150%] text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nec porttitor lorem, ut malesuada diam. Vivamus sed venenatis magna. Suspendisse vehicula porta aliquam.</p>
         </Section>
     )
 }
