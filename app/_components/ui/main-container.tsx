@@ -4,7 +4,7 @@ type MainContainerProps = {
 
 const MainContainer = ({children}: MainContainerProps) => {
     return (
-        <div className="max-w-[1400px] mx-auto p-5">{children}</div>
+        <div className="max-w-[1400px] mx-auto px-5">{children}</div>
     )
 }
 
