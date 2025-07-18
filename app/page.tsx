@@ -10,8 +10,7 @@ import ServicesSection from "./_components/services-section";
 import MyTechStackSection from "./_components/my-tech-stack-section";
 import MyProjectsSection from "./_components/my-projects-section";
 import TestimoniesSection from "./testimonies-section";
-import Footer from "./_components/ui/footer";
-
+import CtaSection from "./_components/cta-section";
 export default function Home() {
   return (
     <>
@@ -23,8 +22,8 @@ export default function Home() {
         <ServicesSection />
         <MyProjectsSection/>
         <TestimoniesSection />
-        <Footer/>
+        <CtaSection/>
       </MainContainer>
     </>
-  );
+  );  
 }

@@ -1,15 +1,15 @@
-import Section
- from "./_components/section";
+import Section from "./_components/section";
+
 const TestimoniesSection = () => {
     return (
         <Section>
-            <div className="flex flex-row gap-12">
-                <div className="flex flex-col gap-8 border-r border-[rgba(250,250,250,0.1)] flex-2/5 py-32 pr-4">
+            <div className="flex lg:flex-row flex-col gap-12">
+                <div className="flex flex-col gap-8 lg:border-r-1 border-r-0 lg:border-b-0 border-b-1 border-[rgba(250,250,250,0.1)] flex-2/5 lg:py-32 py-0 lg:pr-4 pb-6">
                     <h2 className="heading-2">What People Say About Me</h2>
                     <p className="paragraph">Here’s what clients and colleagues have said about working with me.</p>
                 </div>
                 <div className="flex flex-col gap-16 flex-3/5 justify-center">
-                    <p className="text-2xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis et  ullamcorper diam. Mauris id sapien tempus, tempus ipsum vitae, blandit  ligula. Etiam molestie, metus congue aliquam consectetur.</p>
+                    <p className="lg:text-2xl text-xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis et  ullamcorper diam. Mauris id sapien tempus, tempus ipsum vitae, blandit  ligula. Etiam molestie, metus congue aliquam consectetur.</p>
                     <div className="flex flex-row justify-between">
                         <div className="flex flex-row gap-2">
                             <div className="w-12 h-12 bg-[#D9D9D9] rounded-sm"></div>

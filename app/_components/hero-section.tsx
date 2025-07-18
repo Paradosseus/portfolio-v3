@@ -7,9 +7,9 @@ import TypewriterEffect from "./plugins/typewriterEffect"
 const HeroSection = () => {
     return (
         <Section>
-            <div className="flex flex-col gap-8 lg:h-[480px] h-[480px] justify-center items-center">  
+            <div className="flex flex-col gap-8 lg:h-[560px] h-[480px] justify-center lg:items-start \">  
             <div className="flex flex-col gap-4">
-                <h1 className="display-text"><TypewriterEffect value='Hi, my name is <span style="color: #CB1B1B; font-weight: 700">FJ</span>' /></h1>
+                <h1 className="display-text relative -z-1"><TypewriterEffect value='Hi, my name is <span style="color: #CB1B1B; font-weight: 700">FJ</span>' /></h1>
                 <p className="paragraph-hero">Your Fiery Web Designer and Front-end Developer based in the Philippines.</p>
                 </div>
                 <div className="flex gap-6">
